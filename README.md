@@ -9,7 +9,7 @@ A newer PC with UEFI can also boot in BIOS-mode in CSM.
 A UEFI-PC can only boot a 64bit-operating-system.
 
 BIOS-preboot-environment:
-first the bios initialize the hardware and give the ser a choice to enter the bios configuration (F2 or other keys).
+first the bios initialize the hardware and give the user a choice to enter the bios configuration (F2 or other keys).
 then bios looks at the selected boot-disk and load and start its MBR (master boot record) boot code.
 this MBR is always in the firstsector (512 bytes) of the disk.
 
