@@ -20,7 +20,7 @@ now create a primary partion. you can use all avail sectors or use less.
 now format the partion/volume with Fat32.
 now set the partion as active (bootable): select disk X, select part 1. active.
 
-now the bios can start with this disk. the mbr bootcode will look at the partion table inside the mbr for a active partition and load the first sector of that partition and start the bootcode there. beacause we formated with fat32 there willbe the ms bootcode for fat/windows10. it will look for a bootmgr file in the partition and show a error message "no operating-system found".
+now the bios can start with this disk. the mbr bootcode will look at the partion table inside the mbr for a active partition and load the first sector of that partition and start the bootcode there. because we formated with fat32 there willbe the ms bootcode for fat/windows10. it will look for a bootmgr file in the partition and show a error message "no operating-system found".
 
 we need to patch this bootcode in the first sector of the partion (often in sector 0x800) with our bootcode.
 our bootcode is 1024 bytes long in fat32.bin.  use bootsect.exe e: to patch the volume e: 
