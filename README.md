@@ -40,5 +40,5 @@ winload will now load the boot drivers.
 winload prepare a LOADER_PARAMETER_BLOCK with all the data about all this.
 now winload will switch the processor to 32bit protected mode and prepare the virtual adresses for the memory.
 
-now winload will activate the kernel. jumt to kernel: KiSystemStartup(LOADER_PARAMETER_BLOCK *loaderData)
+now winload will activate the kernel. jumt to kernel: KiSystemStartup(LOADER_PARAMETER_BLOCK *loaderData).
 now the kernel will initialize the operating-system.
